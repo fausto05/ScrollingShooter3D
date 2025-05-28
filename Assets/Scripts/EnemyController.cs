@@ -38,6 +38,7 @@ public class EnemyController : MonoBehaviour
         {
             Destroy(gameObject);
             Destroy(other.gameObject);
+            GameManager.Instance.AddKill();
         }
     }
 }

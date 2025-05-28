@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
 
     private void Die()
     {
+        GameManager.Instance.GameOver();
         Destroy(gameObject);
     }
 }
